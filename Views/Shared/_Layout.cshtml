@@ -15,22 +15,19 @@
 
         <!-- Menu -->
         @await Html.PartialAsync("MenuPartial")
+        
+        <!-- Intro -->
+        @await Html.PartialAsync("IntroPartial")
 
         <!-- Main -->
         <div id="main">
 
             @RenderBody()
 
-            <!-- Pagination -->
-            @await Html.PartialAsync("PaginationPartial")
-
         </div>
 
         <!-- Sidebar -->
         <section id="sidebar">
-
-            <!-- Intro -->
-            @await Html.PartialAsync("IntroPartial")
 
             <!-- About -->
             @await Html.PartialAsync("AboutPartial")
